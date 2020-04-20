@@ -12,6 +12,8 @@
         if (request.readyState == 4 && request.status == 200) {
           result = request.full_text;
           console.log(result);
+          tweets = JSON.parse(result);
+          print(tweets);
         }
       }
     }
