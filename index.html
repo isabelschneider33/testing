@@ -1,5 +1,15 @@
 <html>
 <head>
+<!--   pip install git+https://github.com/tweepy/tweepy.git -->
+  import Tweepy
+  
+  auth = tweepy.AppAuthHandler(consumer_key, consumer_secret)
+  api = tweepy.API(auth)
+  
+  mentions = api.mentions_timeline().items(4)
+  for tweet in mentions:
+    print(tweet.text)
+  
 </head>
 <body>
 <h1>My Cool Web Page</h1>
@@ -10,6 +20,6 @@ Hello World! A little bit about me <br/>
   Major: Psychology, Spanish <br/>
   Something no one would expect about me: I have a twin <br/>
   <br/>
-  <img src="pic.jpg"/>
+<!--   <img src="pic.jpg"/> -->
 </body>
 </html>
