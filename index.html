@@ -3,8 +3,10 @@
 </head>
 <body>
   
+<h1>My Cool Web Page</h1>
+  
   <script language="javascript">
-   function getTweets(){
+  function getTweets(){
     pip install git+https://github.com/tweepy/tweepy.git;
     auth = tweepy.OAuthHandler(LXb0G7lz2YrFDGitD7HXfuLjE, AI1k2QMbC3l720mj96lWoUKOIkmFtLzvPQPO4wmiU1kAbLDRt9);
     auth.set_access_token(1249635192588906496-Ex70fz5hjzFQDP3eHJi8AUycHHHb28, fvweyXVi8GQIzVQlz7kRs6HEMWVlUErKs5UcX0HNE1iN2);
@@ -13,15 +15,11 @@
 
     public_tweets = api.mentions_timeline();
     for tweet in public_tweets:
-      print(tweet.text);
+      document.write(tweet.text);
   }
+  getTweets();
   </script>
   
-<h1>My Cool Web Page</h1>
-  
-  <script language="javascript">
-    getTweets();
-  </script>
 Hello World! A little bit about me <br/>
   Name: Isabel Schneider <br/>
   Email: thats.private@gmail.com <br/>
