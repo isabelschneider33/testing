@@ -5,8 +5,16 @@
   
 <h1>My Cool Web Page</h1>
   
-  <script language="javascript">
-  function getTweets(){
+  $.ajax({
+  type: "POST",
+  url: "~/pythoncode.py",
+  data: {}
+  }).done(function( o ) {
+   // do something
+  });
+  
+<!--   <script language="javascript">
+  def getTweets(){
     pip install tweepy;
     auth = tweepy.OAuthHandler(LXb0G7lz2YrFDGitD7HXfuLjE, AI1k2QMbC3l720mj96lWoUKOIkmFtLzvPQPO4wmiU1kAbLDRt9);
     auth.set_access_token(1249635192588906496-Ex70fz5hjzFQDP3eHJi8AUycHHHb28, fvweyXVi8GQIzVQlz7kRs6HEMWVlUErKs5UcX0HNE1iN2);
@@ -15,10 +23,17 @@
 
     public_tweets = api.mentions_timeline();
     for tweet in public_tweets:
-      document.write(tweet.text);
+      print(tweet.text);
   }
-  getTweets();
-  </script>
+  getTweets(); 
+  </script> -->
+  
+  <a class="twitter-timeline"
+  href="https://twitter.com/search?q=@PPE_Donations&src=typed_query&fbclid=IwAR2Pz62L8-gDh09U8N6l4z_4p8N3JOYg1cM_gbxrkawBcmaJzr0npTq-m-I"
+  data-width="300"
+  data-height="300">
+Tweets by @TwitterDev
+</a>
   
 Hello World! A little bit about me <br/>
   Name: Isabel Schneider <br/>
